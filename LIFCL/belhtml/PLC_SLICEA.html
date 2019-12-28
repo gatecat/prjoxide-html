@@ -1,0 +1,77 @@
+<html> 
+<head>
+<title>PLC/SLICEA (SLICE) Bel Documentation</title>
+</head>
+<body>
+<h1>PLC/SLICEA (SLICE) Bel Documentation</h1>
+
+<p><strong>SLICE</strong> bels contain two LUT4s, two D flipflops and carry logic (CCU2). They also contain a MUX2 driven by the LUT4s to create a LUT5.</p>
+
+<p>In distributed RAM mode, the LUT4s in SLICEs A and B become 16x2 bits of memory, with the LUT4 inputs being the read address. The write port (signals beginning with <code>W</code>) is routed through SLICEC.</p>
+
+<h2>Bel Pins</h2>
+<table class="bpins" style="border-spacing:0"><tr><th>Pin</th><th></th><th>Wire</th><th></th></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">A0</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JA0_SLICEA</td><td>LUT0 A input</tr>
+<tr ><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">A1</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JA1_SLICEA</td><td>LUT1 A input</tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">B0</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JB0_SLICEA</td><td>LUT0 B input</tr>
+<tr ><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">B1</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JB1_SLICEA</td><td>LUT1 B input</tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">C0</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JC0_SLICEA</td><td>LUT0 C input</tr>
+<tr ><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">C1</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JC1_SLICEA</td><td>LUT1 C input</tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">D0</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JD0_SLICEA</td><td>LUT0 D input</tr>
+<tr ><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">D1</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JD1_SLICEA</td><td>LUT1 D input</tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">M0</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JM0_SLICEA</td><td>FF0 M (direct) input</tr>
+<tr ><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">M1</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JM1_SLICEA</td><td>FF1 M (direct) input</tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">DI0</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JDI0_SLICEA</td><td>FF0 DI (LUT/mux output) input</tr>
+<tr ><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">DI1</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JDI1_SLICEA</td><td>FF1 DI (LUT output) input</tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">SEL</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JSEL_SLICEA</td><td>LUT MUX2 select input</tr>
+<tr ><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">FCI</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JFCI_SLICEA</td><td>fast carry input</tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">CLK</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JCLK_SLICEA</td><td>FF clock</tr>
+<tr ><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">CE</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JCE_SLICEA</td><td>FF clock enable</tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">LSR</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JLSR_SLICEA</td><td>FF local set/reset</tr>
+<tr ><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">F0</td><td>&rarr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JF0_SLICEA</td><td>LUT0 output</tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">F1</td><td>&rarr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JF1_SLICEA</td><td>LUT1 output</tr>
+<tr ><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">Q0</td><td>&rarr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JQ0_SLICEA</td><td>FF0 output</tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">Q1</td><td>&rarr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JQ1_SLICEA</td><td>FF1 output</tr>
+<tr ><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">OFX0</td><td>&rarr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JOFX0_SLICEA</td><td>MUX2 output</tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">FCO</td><td>&rarr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JFCO_SLICEA</td><td>fast carry out</tr>
+<tr ><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">WAD0</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JWAD0_SLICEA</td><td>LUTRAM write address 0 (from SLICEC)</tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">WAD1</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JWAD1_SLICEA</td><td>LUTRAM write address 1 (from SLICEC)</tr>
+<tr ><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">WAD2</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JWAD2_SLICEA</td><td>LUTRAM write address 2 (from SLICEC)</tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">WAD3</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JWAD3_SLICEA</td><td>LUTRAM write address 3 (from SLICEC)</tr>
+<tr ><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">WCK</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JWCK_SLICEA</td><td>LUTRAM write clock (from SLICEC)</tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">WRE</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JWRE_SLICEA</td><td>LUTRAM write enable (from SLICEC)</tr>
+<tr ><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">WDI0</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JWDI0_SLICEA</td><td>LUTRAM write data 0</tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">WDI1</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JWDI1_SLICEA</td><td>LUTRAM write data 1</tr>
+</table>
+</body></html>

@@ -1,0 +1,23 @@
+<html> 
+<head>
+<title>SYSIO_B7_0/IOA (SEIO33_CORE) Bel Documentation</title>
+</head>
+<body>
+<h1>SYSIO_B7_0/IOA (SEIO33_CORE) Bel Documentation</h1>
+
+<p><strong>SEIO33_CORE</strong> bels implement the buffer side of the wide range (3.3V capable) IOs. Note that the logical parts of these pins (registers, delay and DDR) are implemented using the <strong>SIOLOGIC</strong> bel. These pins can be used as single ended input/inout/output; or two outputs can be used in &quot;pseudo differential&quot; mode - differential input is not possible.</p>
+
+<h2>Bel Pins</h2>
+<table class="bpins" style="border-spacing:0"><tr><th>Pin</th><th></th><th>Wire</th><th></th></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">PADDO</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JPADDO_SEIO33_CORE_IOA</td><td>output buffer input from fabric/IOLOGIC</tr>
+<tr ><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">PADDT</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JPADDT_SEIO33_CORE_IOA</td><td>output buffer tristate (0=driven, 1=hi-z)</tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">PADDI</td><td>&rarr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JPADDI_SEIO33_CORE_IOA</td><td>input buffer output to fabric/IOLOGIC</tr>
+<tr ><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">I3CRESEN</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JI3CRESEN_SEIO33_CORE_IOA</td><td>I3C strong pullup enable</tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">I3CWKPU</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JI3CWKPU_SEIO33_CORE_IOA</td><td>I3C weak pullup enable</tr>
+</table>
+</body></html>
