@@ -1,0 +1,38 @@
+<h1>Bitstream Format</h1>
+<p>The format of the bitstream has many similarities to ECP5 and previous Lattice devices. It is still a command-based format with many similar commands, albeit with changes for some of the new features.</p>
+<h2>&quot;Magic&quot; and comments</h2>
+<p>The first four bytes of the bitstream are <code>0x4C 0x53 0x43 0x43</code> (<strong>LSCC</strong>, i.e. Lattice SemiConductor Corporation). <em>(TODO: test - this may be needed for SPI flash boot to work.)</em></p>
+<p>This the follows an option comment section, which is bounded by <code>0xFF 0x00</code> and <code>0x00 0xFF</code>. It contains several null-terminated strings used by tools like Radiant Programmer to determine the device, package, build date/time etc. It is not parsed by the chip.</p>
+<h2>Preamble</h2>
+<p>The four bytes marking the start of an actual bitstream are <code>0xFF 0xFF 0xBD 0xB3</code>, the same as the ECP5.</p>
+<h2>Commands</h2>
+<p>All commands (except the <code>0xFF</code> dummy command) are followed by three &quot;parameter&quot; bytes and then zero or more bytes of payload. All multi-byte integers are big endian.</p>
+<ul>
+<li><strong>LSC_RESET_CRC</strong> (<code>0x3B</code>): resets the internal CRC16 counter</li>
+<li><strong>VERIFY_ID</strong> (<code>0xE2</code>): after th 3 param bytes; followed by the 32-bit device IDCODE. Config ends if IDCODE does not match</li>
+<li><strong>LSC_PROG_CNTRL0</strong> (<code>0x22</code>): sets the value of control register 0, which contains various settings such as config clock frequency and multiboot mode</li>
+<li><strong>LSC_INIT_ADDRESS</strong> (<code>0x46</code>): sets the frame address counter to 0</li>
+<li><strong>LSC_WRITE_ADDRESS</strong> (<code>0xB4</code>): sets the frame address counter to the 32-bit payload</li>
+<li><strong>LSC_PROG_INCR_RTI</strong> (<code>0x82</code>): programs configuration frames at incrementing addresses. First param byte contains general settings and next two contain 16-bit frame count. See <strong>Config Frames</strong> section for more info</li>
+<li><strong>ISC_PROGRAM_USERCODE</strong> (<code>0xC2</code>): sets the usercode to the 32-bit payload</li>
+<li><strong>LSC_BUS_ADDRESS</strong> (<code>0xF6</code>): sets the IP/RAM bus address to the 32-bit payload</li>
+<li><strong>LSC_BUS_WRITE</strong> (<code>0x72</code>): writes to the IP/RAM bus at incrementing addresses. First param byte contains general settings and next two contain 16-bit word count</li>
+<li><strong>ISC_PROGRAM_DONE</strong> (<code>0x5E</code>): ends configuration and starts FPGA fabric running</li>
+<li><strong>LSC_POWER_CTRL</strong> (<code>0x56</code>): third param byte configures internal power switches (detail unknown)</li>
+</ul>
+<h2>Config Frames</h2>
+<p>Config frames are written in three chunks (numbers for LIFCL):</p>
+<ul>
+<li>32 frames at address 0x8000 set up left and right side IO/IP</li>
+<li>9116 at address 0x0000 set up general fabric (the vast majority of the device)</li>
+<li>24 frames at address 0x8020 set up global clocking &quot;tap&quot;s</li>
+</ul>
+<p>It is believed this ordering is for the &quot;early IO release&quot; feature.</p>
+<h2>IP/RAM bus</h2>
+<p>IP and RAM configuration and initialisation is not done using general configuration frames but using a special bus, which for IP mirrors the LMMI bus exposed to fabric.</p>
+<p>The first byte of the 32-bit bus address is used to determine the destination type, and the word size for <strong>LSC_BUS_WRITE</strong>:</p>
+<ul>
+<li><strong>0x0</strong> is for non-PCIe IP cores (PLL, DPHY, etc) config. Words are 8 bits.</li>
+<li><strong>0x2</strong> is for BRAM and LRAM initialisation. Words are 40 bits.</li>
+<li><strong>0x3</strong> is for PCIe IP config. Words are 32 bits</li>
+</ul>
