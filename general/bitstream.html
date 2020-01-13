@@ -28,6 +28,9 @@
 <li>24 frames at address 0x8020 set up global clocking &quot;tap&quot;s</li>
 </ul>
 <p>It is believed this ordering is for the &quot;early IO release&quot; feature.</p>
+<p>The final 14 bits of each config frame are used for an error correcting code (&quot;parity&quot;).
+This uses the typical CRC algorithm with polynomial 0x202D.</p>
+<p>Following each frame is the standard packet CRC16, which uses the common 0x8005 polynomial.</p>
 <h2>IP/RAM bus</h2>
 <p>IP and RAM configuration and initialisation is not done using general configuration frames but using a special bus, which for IP mirrors the LMMI bus exposed to fabric.</p>
 <p>The first byte of the 32-bit bus address is used to determine the destination type, and the word size for <strong>LSC_BUS_WRITE</strong>:</p>
