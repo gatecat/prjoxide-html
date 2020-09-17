@@ -30,6 +30,8 @@
 <p>It is believed this ordering is for the &quot;early IO release&quot; feature.</p>
 <p>The final 14 bits of each config frame are used for an error correcting code (&quot;parity&quot;).
 This uses the typical CRC algorithm with polynomial 0x202D.</p>
+<p>The error correcting code does not include LUT RAM initialisation bits,
+these are masked with zeroes, because they can change at runtime.</p>
 <p>Following each frame is the standard packet CRC16, which uses the common 0x8005 polynomial.</p>
 <h2>IP/RAM bus</h2>
 <p>IP and RAM configuration and initialisation is not done using general configuration frames but using a special bus, which for IP mirrors the LMMI bus exposed to fabric.</p>

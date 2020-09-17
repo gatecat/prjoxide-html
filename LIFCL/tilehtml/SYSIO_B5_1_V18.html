@@ -131,7 +131,6 @@ onmouseover='mov(event);' onmouseout='mou(event);'>I</div></a></td>
 <td style='height: 100%; border: 2px solid black;'>
 <a href='#enum_IOLOGICB.ODDRXN.DDRMODE' title='F21B0
 IOLOGICB.MODDRXN.DDRMODE
-IOLOGICB.MODE
 IOLOGICB.ODDRXN.DDRMODE' style='text-decoration: none; color: #000000'>
 <div id='f21b0' style='height: 100%; background-color: #88FF88; width: 12px' class='grp_enum_IOLOGICB.ODDRXN.DDRMODE'
 onmouseover='mov(event);' onmouseout='mou(event);'>D</div></a></td>
@@ -455,6 +454,7 @@ onmouseover='mov(event);' onmouseout='mou(event);'>O</div></a></td>
 <td style='height: 100%; border: 2px solid black;'>
 <a href='#enum_PIOB.SEIO18.DRIVE_HSUL12' title='F89B0
 PIOA.DIFFIO18.BASE_TYPE
+PIOA.SEIO18.BASE_TYPE
 PIOB.SEIO18.BASE_TYPE
 PIOB.SEIO18.DRIVE_1V2
 PIOB.SEIO18.DRIVE_1V5
@@ -674,7 +674,6 @@ onmouseover='mov(event);' onmouseout='mou(event);'>I</div></a></td>
 <td style='height: 100%; border: 2px solid black;'>
 <a href='#enum_IOLOGICB.ODDRXN.DDRMODE' title='F21B1
 IOLOGICB.MODDRXN.DDRMODE
-IOLOGICB.MODE
 IOLOGICB.ODDRXN.DDRMODE' style='text-decoration: none; color: #000000'>
 <div id='f21b1' style='height: 100%; background-color: #88FF88; width: 12px' class='grp_enum_IOLOGICB.ODDRXN.DDRMODE'
 onmouseover='mov(event);' onmouseout='mou(event);'>D</div></a></td>
@@ -1331,43 +1330,29 @@ onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
 <h3 id='enum_IOLOGICB.MODE'>Configuration enum IOLOGICB.MODE</h3>
 <table class='setenum'><tr><th>Value</th>
 <th style='padding-left: 10px; padding-right: 10px'>F13B0</th>
-<th style='padding-left: 10px; padding-right: 10px'>F21B0</th>
-<th style='padding-left: 10px; padding-right: 10px'>F21B1</th>
 <th style='padding-left: 10px; padding-right: 10px'>F69B0</th>
 </tr>
 <tr  bgcolor="#dddddd"><td>IDDRX1_ODDRX1</td>
-<td style="text-align: center">-</td>
-<td style="text-align: center">1</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">1</td>
 </tr>
 <tr ><td>IDDRXN</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
-<td style="text-align: center">-</td>
-<td style="text-align: center">-</td>
 </tr>
 <tr  bgcolor="#dddddd"><td>IREG_OREG</td>
 <td style="text-align: center">-</td>
-<td style="text-align: center">-</td>
-<td style="text-align: center">1</td>
 <td style="text-align: center">-</td>
 </tr>
 <tr ><td>MIDDRXN_MODDRXN</td>
 <td style="text-align: center">1</td>
 <td style="text-align: center">-</td>
-<td style="text-align: center">-</td>
-<td style="text-align: center">-</td>
 </tr>
 <tr  bgcolor="#dddddd"><td>NONE</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
-<td style="text-align: center">-</td>
-<td style="text-align: center">-</td>
 </tr>
 <tr ><td>ODDRXN</td>
-<td style="text-align: center">-</td>
-<td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
 </tr>
@@ -1573,7 +1558,7 @@ onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">1</td>
 <td style="text-align: center">-</td>
-<td style="text-align: center">-</td>
+<td style="text-align: center">0</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
@@ -1588,7 +1573,7 @@ onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">1</td>
 <td style="text-align: center">-</td>
-<td style="text-align: center">-</td>
+<td style="text-align: center">0</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
@@ -1603,7 +1588,7 @@ onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">1</td>
 <td style="text-align: center">-</td>
-<td style="text-align: center">-</td>
+<td style="text-align: center">0</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
@@ -1633,7 +1618,7 @@ onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
 <td style="text-align: center">1</td>
 <td style="text-align: center">1</td>
 <td style="text-align: center">-</td>
-<td style="text-align: center">-</td>
+<td style="text-align: center">0</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
@@ -1663,7 +1648,7 @@ onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
 <td style="text-align: center">1</td>
 <td style="text-align: center">1</td>
 <td style="text-align: center">-</td>
-<td style="text-align: center">-</td>
+<td style="text-align: center">0</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
@@ -1678,7 +1663,7 @@ onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">1</td>
 <td style="text-align: center">-</td>
-<td style="text-align: center">-</td>
+<td style="text-align: center">0</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
@@ -1693,7 +1678,7 @@ onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">1</td>
 <td style="text-align: center">-</td>
-<td style="text-align: center">-</td>
+<td style="text-align: center">0</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
@@ -1708,7 +1693,7 @@ onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">1</td>
 <td style="text-align: center">-</td>
-<td style="text-align: center">-</td>
+<td style="text-align: center">0</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
@@ -1723,7 +1708,7 @@ onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">1</td>
 <td style="text-align: center">1</td>
-<td style="text-align: center">-</td>
+<td style="text-align: center">0</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
@@ -1738,7 +1723,7 @@ onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">1</td>
 <td style="text-align: center">-</td>
-<td style="text-align: center">-</td>
+<td style="text-align: center">0</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
@@ -1753,7 +1738,7 @@ onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">1</td>
 <td style="text-align: center">-</td>
-<td style="text-align: center">-</td>
+<td style="text-align: center">0</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
@@ -1768,7 +1753,7 @@ onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">1</td>
 <td style="text-align: center">-</td>
-<td style="text-align: center">-</td>
+<td style="text-align: center">0</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
@@ -1783,7 +1768,7 @@ onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">1</td>
 <td style="text-align: center">-</td>
-<td style="text-align: center">-</td>
+<td style="text-align: center">0</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
@@ -1798,7 +1783,7 @@ onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">1</td>
 <td style="text-align: center">-</td>
-<td style="text-align: center">-</td>
+<td style="text-align: center">0</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
@@ -1813,7 +1798,7 @@ onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">1</td>
 <td style="text-align: center">-</td>
-<td style="text-align: center">-</td>
+<td style="text-align: center">0</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
@@ -1873,7 +1858,7 @@ onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">1</td>
 <td style="text-align: center">-</td>
-<td style="text-align: center">-</td>
+<td style="text-align: center">0</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
@@ -1888,7 +1873,7 @@ onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
-<td style="text-align: center">-</td>
+<td style="text-align: center">0</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
@@ -1903,7 +1888,7 @@ onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">1</td>
 <td style="text-align: center">-</td>
-<td style="text-align: center">-</td>
+<td style="text-align: center">0</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
@@ -1933,7 +1918,7 @@ onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
 <td style="text-align: center">1</td>
 <td style="text-align: center">1</td>
 <td style="text-align: center">-</td>
-<td style="text-align: center">-</td>
+<td style="text-align: center">0</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
@@ -1963,7 +1948,7 @@ onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
 <td style="text-align: center">1</td>
 <td style="text-align: center">1</td>
 <td style="text-align: center">-</td>
-<td style="text-align: center">-</td>
+<td style="text-align: center">0</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
@@ -2010,6 +1995,107 @@ onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
 <td style="text-align: center">0</td>
 </tr>
 <tr ><td>NONE</td>
+<td style="text-align: center">1</td>
+</tr>
+</table>
+<h3 id='enum_PIOA.SEIO18.BASE_TYPE'>Configuration enum PIOA.SEIO18.BASE_TYPE</h3>
+<table class='setenum'><tr><th>Value</th>
+<th style='padding-left: 10px; padding-right: 10px'>F89B0</th>
+</tr>
+<tr  bgcolor="#dddddd"><td>BIDIR_HSTL15_I</td>
+<td style="text-align: center">1</td>
+</tr>
+<tr ><td>BIDIR_HSUL12</td>
+<td style="text-align: center">-</td>
+</tr>
+<tr  bgcolor="#dddddd"><td>BIDIR_LVCMOS10H</td>
+<td style="text-align: center">1</td>
+</tr>
+<tr ><td>BIDIR_LVCMOS12H</td>
+<td style="text-align: center">1</td>
+</tr>
+<tr  bgcolor="#dddddd"><td>BIDIR_LVCMOS15H</td>
+<td style="text-align: center">1</td>
+</tr>
+<tr ><td>BIDIR_LVCMOS18H</td>
+<td style="text-align: center">1</td>
+</tr>
+<tr  bgcolor="#dddddd"><td>BIDIR_SSTL135_I</td>
+<td style="text-align: center">1</td>
+</tr>
+<tr ><td>BIDIR_SSTL135_II</td>
+<td style="text-align: center">1</td>
+</tr>
+<tr  bgcolor="#dddddd"><td>BIDIR_SSTL15_I</td>
+<td style="text-align: center">1</td>
+</tr>
+<tr ><td>BIDIR_SSTL15_II</td>
+<td style="text-align: center">1</td>
+</tr>
+<tr  bgcolor="#dddddd"><td>INPUT_HSTL15_I</td>
+<td style="text-align: center">1</td>
+</tr>
+<tr ><td>INPUT_HSUL12</td>
+<td style="text-align: center">-</td>
+</tr>
+<tr  bgcolor="#dddddd"><td>INPUT_LVCMOS10H</td>
+<td style="text-align: center">1</td>
+</tr>
+<tr ><td>INPUT_LVCMOS10R</td>
+<td style="text-align: center">1</td>
+</tr>
+<tr  bgcolor="#dddddd"><td>INPUT_LVCMOS12H</td>
+<td style="text-align: center">1</td>
+</tr>
+<tr ><td>INPUT_LVCMOS15H</td>
+<td style="text-align: center">1</td>
+</tr>
+<tr  bgcolor="#dddddd"><td>INPUT_LVCMOS18H</td>
+<td style="text-align: center">1</td>
+</tr>
+<tr ><td>INPUT_SSTL135_I</td>
+<td style="text-align: center">1</td>
+</tr>
+<tr  bgcolor="#dddddd"><td>INPUT_SSTL135_II</td>
+<td style="text-align: center">1</td>
+</tr>
+<tr ><td>INPUT_SSTL15_I</td>
+<td style="text-align: center">1</td>
+</tr>
+<tr  bgcolor="#dddddd"><td>INPUT_SSTL15_II</td>
+<td style="text-align: center">1</td>
+</tr>
+<tr ><td>NONE</td>
+<td style="text-align: center">1</td>
+</tr>
+<tr  bgcolor="#dddddd"><td>OUTPUT_HSTL15_I</td>
+<td style="text-align: center">1</td>
+</tr>
+<tr ><td>OUTPUT_HSUL12</td>
+<td style="text-align: center">-</td>
+</tr>
+<tr  bgcolor="#dddddd"><td>OUTPUT_LVCMOS10H</td>
+<td style="text-align: center">1</td>
+</tr>
+<tr ><td>OUTPUT_LVCMOS12H</td>
+<td style="text-align: center">1</td>
+</tr>
+<tr  bgcolor="#dddddd"><td>OUTPUT_LVCMOS15H</td>
+<td style="text-align: center">1</td>
+</tr>
+<tr ><td>OUTPUT_LVCMOS18H</td>
+<td style="text-align: center">1</td>
+</tr>
+<tr  bgcolor="#dddddd"><td>OUTPUT_SSTL135_I</td>
+<td style="text-align: center">1</td>
+</tr>
+<tr ><td>OUTPUT_SSTL135_II</td>
+<td style="text-align: center">1</td>
+</tr>
+<tr  bgcolor="#dddddd"><td>OUTPUT_SSTL15_I</td>
+<td style="text-align: center">1</td>
+</tr>
+<tr ><td>OUTPUT_SSTL15_II</td>
 <td style="text-align: center">1</td>
 </tr>
 </table>
@@ -2305,7 +2391,7 @@ onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
-<td style="text-align: center">-</td>
+<td style="text-align: center">1</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>

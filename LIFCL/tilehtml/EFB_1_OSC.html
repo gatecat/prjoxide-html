@@ -163,10 +163,10 @@ onmouseover='mov(event);' onmouseout='mou(event);'>P</div></a></td>
 <div id='f28b0' style='height: 100%; background-color: #FFFFFF; width: 12px' class='grp_unknown'
 onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
 <td style='height: 100%; border: 2px solid black;'>
-<a href='#enum_SYSCONFIG.SLAVE_I2CI3C_PORT' title='F29B0
+<a href='#enum_SYSCONFIG.SLAVE_I2C_PORT' title='F29B0
 CONFIG_IP_CORE.PERSISTI2C
-SYSCONFIG.SLAVE_I2CI3C_PORT' style='text-decoration: none; color: #000000'>
-<div id='f29b0' style='height: 100%; background-color: #88FF88; width: 12px' class='grp_enum_SYSCONFIG.SLAVE_I2CI3C_PORT'
+SYSCONFIG.SLAVE_I2C_PORT' style='text-decoration: none; color: #000000'>
+<div id='f29b0' style='height: 100%; background-color: #88FF88; width: 12px' class='grp_enum_SYSCONFIG.SLAVE_I2C_PORT'
 onmouseover='mov(event);' onmouseout='mou(event);'>P</div></a></td>
 <td style='height: 100%; border: 2px solid black;'>
 <a href='#enum_CONFIG_IP_CORE.MCPERSISTUI2C' title='F30B0
@@ -615,9 +615,10 @@ OSC_CORE.HF_SED_SEC_DIV[0]' style='text-decoration: none; color: #000000'>
 <div id='f22b1' style='height: 100%; background-color: #88FF88; width: 12px' class='grp_word_OSC_CORE.HF_SED_SEC_DIV'
 onmouseover='mov(event);' onmouseout='mou(event);'>D</div></a></td>
 <td style='height: 100%; border: 2px solid black;'>
-<a href='#unknown' title='F23B1' style='text-decoration: none; color: #000000'>
-<div id='f23b1' style='height: 100%; background-color: #FFFFFF; width: 12px' class='grp_unknown'
-onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
+<a href='#enum_OSC_CORE.DEBUG_N' title='F23B1
+OSC_CORE.DEBUG_N' style='text-decoration: none; color: #000000'>
+<div id='f23b1' style='height: 100%; background-color: #88FF88; width: 12px' class='grp_enum_OSC_CORE.DEBUG_N'
+onmouseover='mov(event);' onmouseout='mou(event);'>N</div></a></td>
 <td style='height: 100%; border: 2px solid black;'>
 <a href='#unknown' title='F24B1' style='text-decoration: none; color: #000000'>
 <div id='f24b1' style='height: 100%; background-color: #FFFFFF; width: 12px' class='grp_unknown'
@@ -1211,6 +1212,19 @@ onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
 <td style="text-align: center">-</td>
 </tr>
 </table>
+<h3 id='enum_OSC_CORE.DEBUG_N'>Configuration enum OSC_CORE.DEBUG_N</h3>
+<p>enable debug mode</p>
+
+<table class='setenum'><tr><th>Value</th>
+<th style='padding-left: 10px; padding-right: 10px'>F23B1</th>
+</tr>
+<tr  bgcolor="#dddddd"><td>DISABLED</td>
+<td style="text-align: center">1</td>
+</tr>
+<tr ><td>ENABLED</td>
+<td style="text-align: center">-</td>
+</tr>
+</table>
 <h3 id='enum_OSC_CORE.DTR_EN'>Configuration enum OSC_CORE.DTR_EN</h3>
 <table class='setenum'><tr><th>Value</th>
 <th style='padding-left: 10px; padding-right: 10px'>F105B0</th>
@@ -1311,8 +1325,8 @@ onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
 <td style="text-align: center">-</td>
 </tr>
 </table>
-<h3 id='enum_SYSCONFIG.SLAVE_I2CI3C_PORT'>Configuration enum SYSCONFIG.SLAVE_I2CI3C_PORT</h3>
-<p>status of slave I2C/I3C port after configuration</p>
+<h3 id='enum_SYSCONFIG.SLAVE_I2C_PORT'>Configuration enum SYSCONFIG.SLAVE_I2C_PORT</h3>
+<p>status of slave I2C port after configuration</p>
 
 <table class='setenum'><tr><th>Value</th>
 <th style='padding-left: 10px; padding-right: 10px'>F29B0</th>

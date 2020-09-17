@@ -113,17 +113,25 @@ onmouseover='mov(event);' onmouseout='mou(event);'>C</div></a></td>
 <div id='f12b0' style='height: 100%; background-color: #FFFFFF; width: 12px' class='grp_unknown'
 onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
 <td style='height: 100%; border: 2px solid black;'>
-<a href='#unknown' title='F13B0' style='text-decoration: none; color: #000000'>
-<div id='f13b0' style='height: 100%; background-color: #FFFFFF; width: 12px' class='grp_unknown'
-onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
+<a href='#enum_EBR0.SP16K_MODE.AD0MUX' title='F13B0
+EBR0.DP16K_MODE.ADB0MUX
+EBR0.PDP16K_MODE.ADR0MUX
+EBR0.PDPSC16K_MODE.ADR0MUX
+EBR0.SP16K_MODE.AD0MUX' style='text-decoration: none; color: #000000'>
+<div id='f13b0' style='height: 100%; background-color: #88FF88; width: 12px' class='grp_enum_EBR0.SP16K_MODE.AD0MUX'
+onmouseover='mov(event);' onmouseout='mou(event);'>A</div></a></td>
 <td style='height: 100%; border: 2px solid black;'>
 <a href='#unknown' title='F14B0' style='text-decoration: none; color: #000000'>
 <div id='f14b0' style='height: 100%; background-color: #FFFFFF; width: 12px' class='grp_unknown'
 onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
 <td style='height: 100%; border: 2px solid black;'>
-<a href='#unknown' title='F15B0' style='text-decoration: none; color: #000000'>
-<div id='f15b0' style='height: 100%; background-color: #FFFFFF; width: 12px' class='grp_unknown'
-onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
+<a href='#enum_EBR0.SP16K_MODE.AD1MUX' title='F15B0
+EBR0.DP16K_MODE.ADB1MUX
+EBR0.PDP16K_MODE.ADR1MUX
+EBR0.PDPSC16K_MODE.ADR1MUX
+EBR0.SP16K_MODE.AD1MUX' style='text-decoration: none; color: #000000'>
+<div id='f15b0' style='height: 100%; background-color: #88FF88; width: 12px' class='grp_enum_EBR0.SP16K_MODE.AD1MUX'
+onmouseover='mov(event);' onmouseout='mou(event);'>A</div></a></td>
 <td style='height: 100%; border: 2px solid black;'>
 <a href='#unknown' title='F16B0' style='text-decoration: none; color: #000000'>
 <div id='f16b0' style='height: 100%; background-color: #FFFFFF; width: 12px' class='grp_unknown'
@@ -273,10 +281,10 @@ EBR0.FIFO16K_MODE.ALMOST_EMPTY[2]' style='text-decoration: none; color: #000000'
 <div id='f41b0' style='height: 100%; background-color: #88FF88; width: 12px' class='grp_word_EBR0.FIFO16K_MODE.ALMOST_EMPTY'
 onmouseover='mov(event);' onmouseout='mou(event);'>E</div></a></td>
 <td style='height: 100%; border: 2px solid black;'>
-<a href='#enum_CHIP.SPEED' title='F42B0
-CHIP.SPEED' style='text-decoration: none; color: #000000'>
-<div id='f42b0' style='height: 100%; background-color: #88FF88; width: 12px' class='grp_enum_CHIP.SPEED'
-onmouseover='mov(event);' onmouseout='mou(event);'>S</div></a></td>
+<a href='#always_on' title='F42B0
+Always On' style='text-decoration: none; color: #000000'>
+<div id='f42b0' style='height: 100%; background-color: #888888; width: 12px' class='grp_always_on'
+onmouseover='mov(event);' onmouseout='mou(event);'>1</div></a></td>
 <td style='height: 100%; border: 2px solid black;'>
 <a href='#word_EBR0.FIFO16K_MODE.ALMOST_EMPTY' title='F43B0
 EBR0.FIFO16K_MODE.ALMOST_EMPTY[3]' style='text-decoration: none; color: #000000'>
@@ -709,17 +717,26 @@ onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
 <tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px">EBR0.WID[10]</td><td style="padding-left: 10px; padding-right: 10px">F66B0</td></tr>
 </table>
 <h2>Configuration Enums</h2>
-<h3 id='enum_CHIP.SPEED'>Configuration enum CHIP.SPEED</h3>
-<p>Adjust back bias for high speed or low power</p>
-
+<h3 id='enum_EBR0.DP16K_MODE.ADB0MUX'>Configuration enum EBR0.DP16K_MODE.ADB0MUX</h3>
 <table class='setenum'><tr><th>Value</th>
-<th style='padding-left: 10px; padding-right: 10px'>F42B0</th>
+<th style='padding-left: 10px; padding-right: 10px'>F13B0</th>
 </tr>
-<tr  bgcolor="#dddddd"><td>FAST_1V0</td>
+<tr  bgcolor="#dddddd"><td>ADB0</td>
+<td style="text-align: center">-</td>
+</tr>
+<tr ><td>INV</td>
 <td style="text-align: center">1</td>
 </tr>
-<tr ><td>SLOW_1V0</td>
-<td style="text-align: center">0</td>
+</table>
+<h3 id='enum_EBR0.DP16K_MODE.ADB1MUX'>Configuration enum EBR0.DP16K_MODE.ADB1MUX</h3>
+<table class='setenum'><tr><th>Value</th>
+<th style='padding-left: 10px; padding-right: 10px'>F15B0</th>
+</tr>
+<tr  bgcolor="#dddddd"><td>ADB1</td>
+<td style="text-align: center">-</td>
+</tr>
+<tr ><td>INV</td>
+<td style="text-align: center">1</td>
 </tr>
 </table>
 <h3 id='enum_EBR0.DP16K_MODE.ASYNC_RST_RELEASE_B'>Configuration enum EBR0.DP16K_MODE.ASYNC_RST_RELEASE_B</h3>
@@ -1112,6 +1129,28 @@ onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
 <td style="text-align: center">1</td>
 </tr>
 </table>
+<h3 id='enum_EBR0.PDP16K_MODE.ADR0MUX'>Configuration enum EBR0.PDP16K_MODE.ADR0MUX</h3>
+<table class='setenum'><tr><th>Value</th>
+<th style='padding-left: 10px; padding-right: 10px'>F13B0</th>
+</tr>
+<tr  bgcolor="#dddddd"><td>ADR0</td>
+<td style="text-align: center">-</td>
+</tr>
+<tr ><td>INV</td>
+<td style="text-align: center">1</td>
+</tr>
+</table>
+<h3 id='enum_EBR0.PDP16K_MODE.ADR1MUX'>Configuration enum EBR0.PDP16K_MODE.ADR1MUX</h3>
+<table class='setenum'><tr><th>Value</th>
+<th style='padding-left: 10px; padding-right: 10px'>F15B0</th>
+</tr>
+<tr  bgcolor="#dddddd"><td>ADR1</td>
+<td style="text-align: center">-</td>
+</tr>
+<tr ><td>INV</td>
+<td style="text-align: center">1</td>
+</tr>
+</table>
 <h3 id='enum_EBR0.PDP16K_MODE.ASYNC_RST_RELEASE'>Configuration enum EBR0.PDP16K_MODE.ASYNC_RST_RELEASE</h3>
 <table class='setenum'><tr><th>Value</th>
 <th style='padding-left: 10px; padding-right: 10px'>F72B0</th>
@@ -1252,6 +1291,28 @@ onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
 <td style="text-align: center">-</td>
 </tr>
 </table>
+<h3 id='enum_EBR0.PDPSC16K_MODE.ADR0MUX'>Configuration enum EBR0.PDPSC16K_MODE.ADR0MUX</h3>
+<table class='setenum'><tr><th>Value</th>
+<th style='padding-left: 10px; padding-right: 10px'>F13B0</th>
+</tr>
+<tr  bgcolor="#dddddd"><td>ADR0</td>
+<td style="text-align: center">-</td>
+</tr>
+<tr ><td>INV</td>
+<td style="text-align: center">1</td>
+</tr>
+</table>
+<h3 id='enum_EBR0.PDPSC16K_MODE.ADR1MUX'>Configuration enum EBR0.PDPSC16K_MODE.ADR1MUX</h3>
+<table class='setenum'><tr><th>Value</th>
+<th style='padding-left: 10px; padding-right: 10px'>F15B0</th>
+</tr>
+<tr  bgcolor="#dddddd"><td>ADR1</td>
+<td style="text-align: center">-</td>
+</tr>
+<tr ><td>INV</td>
+<td style="text-align: center">1</td>
+</tr>
+</table>
 <h3 id='enum_EBR0.PDPSC16K_MODE.ASYNC_RST_RELEASE'>Configuration enum EBR0.PDPSC16K_MODE.ASYNC_RST_RELEASE</h3>
 <table class='setenum'><tr><th>Value</th>
 <th style='padding-left: 10px; padding-right: 10px'>F72B0</th>
@@ -1390,6 +1451,28 @@ onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
 <tr ><td>RST</td>
 <td style="text-align: center">-</td>
 <td style="text-align: center">-</td>
+</tr>
+</table>
+<h3 id='enum_EBR0.SP16K_MODE.AD0MUX'>Configuration enum EBR0.SP16K_MODE.AD0MUX</h3>
+<table class='setenum'><tr><th>Value</th>
+<th style='padding-left: 10px; padding-right: 10px'>F13B0</th>
+</tr>
+<tr  bgcolor="#dddddd"><td>AD0</td>
+<td style="text-align: center">-</td>
+</tr>
+<tr ><td>INV</td>
+<td style="text-align: center">1</td>
+</tr>
+</table>
+<h3 id='enum_EBR0.SP16K_MODE.AD1MUX'>Configuration enum EBR0.SP16K_MODE.AD1MUX</h3>
+<table class='setenum'><tr><th>Value</th>
+<th style='padding-left: 10px; padding-right: 10px'>F15B0</th>
+</tr>
+<tr  bgcolor="#dddddd"><td>AD1</td>
+<td style="text-align: center">-</td>
+</tr>
+<tr ><td>INV</td>
+<td style="text-align: center">1</td>
 </tr>
 </table>
 <h3 id='enum_EBR0.SP16K_MODE.ASYNC_RST_RELEASE'>Configuration enum EBR0.SP16K_MODE.ASYNC_RST_RELEASE</h3>
