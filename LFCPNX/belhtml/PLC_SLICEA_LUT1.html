@@ -1,0 +1,44 @@
+<html> 
+<head>
+<title>PLC/SLICEA_LUT1 (OXIDE_COMB) Bel Documentation</title>
+</head>
+<body>
+<h1>PLC/SLICEA_LUT1 (OXIDE_COMB) Bel Documentation</h1>
+
+<p><strong>OXIDE_COMB</strong> bels are half the combinational part of a <strong>SLICE</strong>. They implement
+a LUT4 and some surrounding logic. They can be used as a LUT4; LUT4 with carry (½CCU2);
+LUT4 with MUX2 (&quot;0&quot; half bels only). Bels in <strong>SLICEA</strong> and <strong>SLICEB</strong> can also be
+used as a 16-bit distributed RAM.</p>
+
+<h2>Bel Pins</h2>
+<table class="bpins" style="border-spacing:0"><tr><th>Pin</th><th></th><th>Wire</th><th></th></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">A</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JA1_SLICEA</td><td>LUT A input</tr>
+<tr ><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">B</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JB1_SLICEA</td><td>LUT B input</tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">C</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JC1_SLICEA</td><td>LUT C input</tr>
+<tr ><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">D</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JD1_SLICEA</td><td>LUT D input</tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">FCI</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JINT_CARRY_SLICEA</td><td>CCU2 fast carry input</tr>
+<tr ><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">F</td><td>&rarr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JF1_SLICEA</td><td>LUT/sum output</tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">FCO</td><td>&rarr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JFCO_SLICEA</td><td>CCU2 fast carry output</tr>
+<tr ><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">WAD0</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JWAD0_SLICEA</td><td>LUTRAM write address 0 (from RAMW)</tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">WAD1</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JWAD1_SLICEA</td><td>LUTRAM write address 1 (from RAMW)</tr>
+<tr ><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">WAD2</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JWAD2_SLICEA</td><td>LUTRAM write address 2 (from RAMW)</tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">WAD3</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JWAD3_SLICEA</td><td>LUTRAM write address 3 (from RAMW)</tr>
+<tr ><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">WDI</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JWDI1_SLICEA</td><td>LUTRAM write data (from RAMW)</tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">WCK</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JWCK_SLICEA</td><td>LUTRAM write clock (from RAMW)</tr>
+<tr ><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">WRE</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JWRE_SLICEA</td><td>LUTRAM write enable (from RAMW)</tr>
+</table>
+</body></html>

@@ -1,0 +1,26 @@
+<html> 
+<head>
+<title>PLC/SLICEA_FF0 (OXIDE_FF) Bel Documentation</title>
+</head>
+<body>
+<h1>PLC/SLICEA_FF0 (OXIDE_FF) Bel Documentation</h1>
+
+<p><strong>OXIDE_FF</strong> bels are half the sequential part of a <strong>SLICE</strong>. They implement
+a single flip flop. </p>
+
+<h2>Bel Pins</h2>
+<table class="bpins" style="border-spacing:0"><tr><th>Pin</th><th></th><th>Wire</th><th></th></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">CLK</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JCLK_SLICEA</td><td>FF clock</tr>
+<tr ><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">CE</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JCE_SLICEA</td><td>FF clock enable</tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">LSR</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JLSR_SLICEA</td><td>FF local set/reset</tr>
+<tr ><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">DI</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JDI0_SLICEA</td><td>FF input from LUT/MUX output</tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">M</td><td>&larr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JM0_SLICEA</td><td>FF direct input from fabric M signal</tr>
+<tr ><td style="padding-left: 20px; padding-right: 20px; margin-left: 0px;">Q</td><td>&rarr;</td>
+<td style="padding-left: 20px; padding-right: 20px">JQ0_SLICEA</td><td>FF output</tr>
+</table>
+</body></html>
