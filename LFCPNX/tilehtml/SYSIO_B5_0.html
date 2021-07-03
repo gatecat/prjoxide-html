@@ -121,13 +121,15 @@ onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
 <div id='f19b0' style='height: 100%; background-color: #FFFFFF; width: 12px' class='grp_unknown'
 onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
 <td style='height: 100%; border: 2px solid black;'>
-<a href='#unknown' title='F20B0' style='text-decoration: none; color: #000000'>
-<div id='f20b0' style='height: 100%; background-color: #FFFFFF; width: 12px' class='grp_unknown'
-onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
+<a href='#mux_JECLKOUT_I217' title='F20B0
+JECLKOUT_I217' style='text-decoration: none; color: #000000'>
+<div id='f20b0' style='height: 100%; background-color: #FF8888; width: 12px' class='grp_mux_JECLKOUT_I217'
+onmouseover='mov(event);' onmouseout='mou(event);'>I</div></a></td>
 <td style='height: 100%; border: 2px solid black;'>
-<a href='#unknown' title='F21B0' style='text-decoration: none; color: #000000'>
-<div id='f21b0' style='height: 100%; background-color: #FFFFFF; width: 12px' class='grp_unknown'
-onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
+<a href='#mux_JECLKOUT_I217' title='F21B0
+JECLKOUT_I217' style='text-decoration: none; color: #000000'>
+<div id='f21b0' style='height: 100%; background-color: #FF8888; width: 12px' class='grp_mux_JECLKOUT_I217'
+onmouseover='mov(event);' onmouseout='mou(event);'>I</div></a></td>
 <td style='height: 100%; border: 2px solid black;'>
 <a href='#unknown' title='F22B0' style='text-decoration: none; color: #000000'>
 <div id='f22b0' style='height: 100%; background-color: #FFFFFF; width: 12px' class='grp_unknown'
@@ -891,5 +893,319 @@ onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
 <div id='f105b1' style='height: 100%; background-color: #FFFFFF; width: 12px' class='grp_unknown'
 onmouseover='mov(event);' onmouseout='mou(event);'>&nbsp;</div></a></td>
 </tr>
+</table>
+<h2>Routing Muxes</h2>
+<h3 id="mux_JECLKOUT_I217">Mux driving <span class="mux_sink">JECLKOUT_I217</span></h3>
+<table class='mux'><tr><th>Source</th>
+<th style='padding-left: 10px; padding-right: 10px'>F20B0</th>
+<th style='padding-left: 10px; padding-right: 10px'>F21B0</th>
+</tr>
+<tr  bgcolor="#dddddd"><td>JECLKIN0_I217</td>
+<td style="text-align: center">-</td>
+<td style="text-align: center">-</td>
+</tr>
+<tr ><td>JECLKIN1_I217</td>
+<td style="text-align: center">-</td>
+<td style="text-align: center">1</td>
+</tr>
+<tr  bgcolor="#dddddd"><td>JECLKIN2_I217</td>
+<td style="text-align: center">1</td>
+<td style="text-align: center">-</td>
+</tr>
+<tr ><td>JECLKIN3_I217</td>
+<td style="text-align: center">1</td>
+<td style="text-align: center">1</td>
+</tr>
+</table>
+<h3>Fixed Connections</h3>
+<table class="fconn" style="border-spacing:0"><tr><th>Source</th><th></th><th>Sink</th></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1:JCE0</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JCEIN_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1E1:JCE0</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JCEIN_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1:JCE0</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JCEOUT_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1E1:JCE0</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JCEOUT_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1:JCIBMUXOUTC5</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JCIBCRS0_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1E1:JCIBMUXOUTC5</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JCIBCRS0_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1:JCIBMUXOUTD5</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JCIBCRS1_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1E1:JCIBMUXOUTD5</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JCIBCRS1_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1:JCIBMUXOUTB6</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JCIBTSTSG_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1E1:JCIBMUXOUTB6</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JCIBTSTSG_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1:JCIBMUXOUTD2</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JDIRECTION_LPDDR4_WT_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1E1:JCIBMUXOUTD2</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JDIRECTION_LPDDR4_WT_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1:JCIBMUXOUTA2</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JDIR_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1E1:JCIBMUXOUTA2</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JDIR_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JPADDI_DIFFIO18A_CORE_IOA</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JDI_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JPADDI_SEIO18A_CORE_IOB</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JDI_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JDOLP_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JDOLP_DIFFIO18A_CORE_IOA</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JDOLP_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JDOLP_SEIO18A_CORE_IOB</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JTXDATA0_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JDOUT_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JTXDATA0_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JDOUT_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">DQSG:JDQSR90_DQSBUFA_CORE_I_DQS_TOP</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JDQSR90_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">DQSG:JDQSR90_DQSBUFA_CORE_I_DQS_TOP</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JDQSR90_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">DQSG:JDQSW270_DQSBUFA_CORE_I_DQS_TOP</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JDQSW270_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">DQSG:JDQSW270_DQSBUFA_CORE_I_DQS_TOP</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JDQSW270_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">DQSG:JDQSW_DQSBUFA_CORE_I_DQS_TOP</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JDQSW_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">DQSG:JDQSW_DQSBUFA_CORE_I_DQS_TOP</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JDQSW_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">G:JECLKOUT0_ECLKCASMUX_CORE_ECLKCASMUX5</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JECLKIN0_I217</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">G:JECLKOUT0_ECLKCASMUX_CORE_ECLKCASMUX5</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JECLKIN0_I218</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">G:JECLKOUT1_ECLKCASMUX_CORE_ECLKCASMUX5</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JECLKIN1_I217</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">G:JECLKOUT1_ECLKCASMUX_CORE_ECLKCASMUX5</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JECLKIN1_I218</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">G:JECLKOUT2_ECLKCASMUX_CORE_ECLKCASMUX5</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JECLKIN2_I217</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">G:JECLKOUT2_ECLKCASMUX_CORE_ECLKCASMUX5</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JECLKIN2_I218</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">G:JECLKOUT3_ECLKCASMUX_CORE_ECLKCASMUX5</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JECLKIN3_I217</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">G:JECLKOUT3_ECLKCASMUX_CORE_ECLKCASMUX5</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JECLKIN3_I218</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JECLKOUT_I217</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JECLK_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JECLKOUT_I218</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JECLK_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JDI_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JINDD_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JDI_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JINDD_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JINLP_DIFFIO18A_CORE_IOA</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JINLP_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JINLP_SEIO18A_CORE_IOB</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JINLP_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1:JCIBMUXOUTC2</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JLOAD_N_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1E1:JCIBMUXOUTC2</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JLOAD_N_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1:JCIBMUXOUTD1</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JLOAD_N_LPDDR4_WT_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1E1:JCIBMUXOUTD1</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JLOAD_N_LPDDR4_WT_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1:JLSR0</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JLSRIN_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1E1:JLSR0</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JLSRIN_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1:JLSR0</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JLSROUT_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1E1:JLSR0</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JLSROUT_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1:JCIBMUXOUTB2</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JMOVE_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1E1:JCIBMUXOUTB2</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JMOVE_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1:JCIBMUXOUTC7</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JMOVE_LPDDR4_WT_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1E1:JCIBMUXOUTC7</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JMOVE_LPDDR4_WT_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JDOUT_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JPADDO_DIFFIO18A_CORE_IOA</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JDOUT_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JPADDO_SEIO18A_CORE_IOB</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JTOUT_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JPADDT_DIFFIO18A_CORE_IOA</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JTOUT_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JPADDT_SEIO18A_CORE_IOB</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1:JCIBMUXOUTC6</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JRANK0UPDATE_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1E1:JCIBMUXOUTC6</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JRANK0UPDATE_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1:JCIBMUXOUTD6</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JRANK1UPDATE_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1E1:JCIBMUXOUTD6</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JRANK1UPDATE_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1:JCIBMUXOUTA7</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JRANKENABLE_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1E1:JCIBMUXOUTA7</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JRANKENABLE_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1:JCIBMUXOUTA6</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JRANKSELECT_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1E1:JCIBMUXOUTA6</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JRANKSELECT_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">DQSG:JRDPNTR0_DQSBUFA_CORE_I_DQS_TOP</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JRDPNTR0_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">DQSG:JRDPNTR0_DQSBUFA_CORE_I_DQS_TOP</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JRDPNTR0_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">DQSG:JRDPNTR1_DQSBUFA_CORE_I_DQS_TOP</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JRDPNTR1_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">DQSG:JRDPNTR1_DQSBUFA_CORE_I_DQS_TOP</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JRDPNTR1_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">DQSG:JRDPNTR2_DQSBUFA_CORE_I_DQS_TOP</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JRDPNTR2_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">DQSG:JRDPNTR2_DQSBUFA_CORE_I_DQS_TOP</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JRDPNTR2_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1:JCLK0</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JSCLKIN_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1E1:JCLK0</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JSCLKIN_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1:JCLK0</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JSCLKOUT_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1E1:JCLK0</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JSCLKOUT_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1:JCIBMUXOUTB7</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JTDOLP_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1E1:JCIBMUXOUTB7</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JTDOLP_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JTSDATA0_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JTOUT_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JTSDATA0_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JTOUT_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1:JCIBMUXOUTB0</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JTSDATA0_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1E1:JCIBMUXOUTB0</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JTSDATA0_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1:JCIBMUXOUTC1</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JTSDATA1_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1E1:JCIBMUXOUTC1</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JTSDATA1_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1:JCIBMUXOUTB3</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JTSDATA2_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1E1:JCIBMUXOUTB3</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JTSDATA2_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1:JCIBMUXOUTC4</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JTSDATA3_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1E1:JCIBMUXOUTC4</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JTSDATA3_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1:JCIBMUXOUTA0</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JTXDATA0_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1E1:JCIBMUXOUTA0</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JTXDATA0_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1:JCIBMUXOUTC0</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JTXDATA1_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1E1:JCIBMUXOUTC0</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JTXDATA1_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1:JCIBMUXOUTD0</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JTXDATA2_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1E1:JCIBMUXOUTD0</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JTXDATA2_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1:JCIBMUXOUTA1</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JTXDATA3_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1E1:JCIBMUXOUTA1</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JTXDATA3_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1:JCIBMUXOUTA5</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JTXDATA4_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1E1:JCIBMUXOUTA5</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JTXDATA4_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1:JCIBMUXOUTA3</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JTXDATA5_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1E1:JCIBMUXOUTA3</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JTXDATA5_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1:JCIBMUXOUTC3</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JTXDATA6_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1E1:JCIBMUXOUTC3</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JTXDATA6_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1:JCIBMUXOUTD3</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JTXDATA7_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1E1:JCIBMUXOUTD3</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JTXDATA7_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1:JCIBMUXOUTA4</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JTXDATA8_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1E1:JCIBMUXOUTA4</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JTXDATA8_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1:JCIBMUXOUTB5</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JTXDATA9_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1E1:JCIBMUXOUTB5</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JTXDATA9_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1:JCIBMUXOUTB1</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JWORDALIGN_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">N1E1:JCIBMUXOUTB1</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JWORDALIGN_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">DQSG:JWRPNTR0_DQSBUFA_CORE_I_DQS_TOP</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JWRPNTR0_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">DQSG:JWRPNTR0_DQSBUFA_CORE_I_DQS_TOP</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JWRPNTR0_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">DQSG:JWRPNTR1_DQSBUFA_CORE_I_DQS_TOP</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JWRPNTR1_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">DQSG:JWRPNTR1_DQSBUFA_CORE_I_DQS_TOP</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JWRPNTR1_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">DQSG:JWRPNTR2_DQSBUFA_CORE_I_DQS_TOP</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JWRPNTR2_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">DQSG:JWRPNTR2_DQSBUFA_CORE_I_DQS_TOP</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">JWRPNTR2_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JRXDATA0_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">N1:JF0</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JRXDATA1_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">N1:JF1</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JRXDATA2_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">N1:JF2</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JRXDATA3_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">N1:JF3</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JRXDATA4_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">N1:JF4</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JRXDATA5_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">N1:JF5</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JRXDATA6_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">N1:JF6</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JRXDATA7_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">N1:JF7</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JINFF_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">N1:JQ0</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JINDD_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">N1:JQ1</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JEDETERR_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">N1:JQ2</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JCOUT_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">N1:JQ3</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JRXDATA8_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">N1:JQ4</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JRXDATA9_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">N1:JQ5</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JCOUT_LPDDR4_WT_IOLOGIC_CORE_I_GEARING_PIC_TOP_A</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">N1:JQ6</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JRXDATA0_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">N1E1:JF0</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JRXDATA1_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">N1E1:JF1</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JRXDATA2_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">N1E1:JF2</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JRXDATA3_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">N1E1:JF3</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JRXDATA4_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">N1E1:JF4</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JRXDATA5_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">N1E1:JF5</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JRXDATA6_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">N1E1:JF6</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JRXDATA7_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">N1E1:JF7</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JINFF_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">N1E1:JQ0</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JINDD_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">N1E1:JQ1</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JEDETERR_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">N1E1:JQ2</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JCOUT_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">N1E1:JQ3</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JRXDATA8_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">N1E1:JQ4</td></tr>
+<tr  bgcolor="#dddddd"><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JRXDATA9_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">N1E1:JQ5</td></tr>
+<tr ><td style="padding-left: 10px; padding-right: 10px; margin-left: 0px;">JCOUT_LPDDR4_WT_IOLOGIC_CORE_I_GEARING_PIC_TOP_B</td><td>&rarr;</td>
+<td style="padding-left: 10px; padding-right: 10px">N1E1:JQ6</td></tr>
 </table>
 </body></html>
